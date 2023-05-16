@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">    
     
     <title>School2trade_v2</title>
-    <script type="module" crossorigin src="/assets/index-e02fd12f.js"></script>
+    <script type="module" crossorigin src="/assets/index-076fdbb9.js"></script>
     <link rel="stylesheet" href="/assets/index-b3ada432.css">
   </head>
 
@@ -391,150 +391,21 @@
   
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script type="module" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="module" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script type="module" src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
 
     <!-- <script type="module" src="/main.js"></script> -->
-    <script type="text/javascript">
-	
-      function depoCalc (firstDepo, monthDepo, yearPer, investYears){
-          if (firstDepo === undefined) {
-              firstDepo = parseInt($('#firstDepo').val());
-          }
-      
-          if (monthDepo === undefined) {
-              monthDepo = parseInt($('#monthDepo').val());
-          }
-      
-          if (yearPer === undefined) {
-              yearPer = parseFloat($('#yearPer').val());
-          }
-      
-          if (investYears === undefined) {
-              investYears = parseInt($('#investYears').val());
-          }
-      
-          var errInput = false;
-          if (investYears < 31) {
-              var profitBars = [];
-              var result = [];
-              var curProfit = firstDepo;
-              var realPer = Math.pow(1+yearPer/100, 1/12);
-              for (i = 0; i < investYears*12; i++) {
-                  if (isNaN(curProfit)) {
-                      errInput = true;
-                  }
-                  curProfit = curProfit*realPer;
-                  profitBars[i] = curProfit;
-                  curProfit = curProfit + monthDepo;
-              }
-              for (i = 1; i < investYears + 1; i++) {
-                  result[i - 1] = [i, Math.round(profitBars[i*12 - 1])];
-              }
-          } else {
-              errInput = true;
-          }
-          if (errInput) {
-              $('#errInput').show();
-              return false;
-          } else {
-              $('#errInput').hide();
-              return result;
-          }
-      }
-      
-      
     
-      
-    function init_morris_charts() {
-       Morris.Bar({
-              element: "graph_bar",
-              data: result,
-              xkey: 0,
-              ykeys: [1],
-              ymax: 1300000,
-              labels: [],
-              hoverCallback: function (index, options, content, row) {
-                return row[1].toLocaleString() + ' USD' ;
-              },
-              barColors: ["#89bf19", "#34495E", "#ACADAC", "#3498DB"],
-              xLabelAngle: 35,
-              hideHover: "auto",
-              resize: !0,
-            })
-      }
-    
-      function init_morris_charts_1() {
-      Morris.Bar({
-              element: "graph_bar_1",
-              data: result,
-              xkey: 0,
-              ykeys: [1],
-              labels: [],
-              hoverCallback: function (index, options, content, row) {
-                return row[1].toLocaleString() + ' USD' ;
-              },
-              barColors: ["#89bf19", "#34495E", "#ACADAC", "#3498DB"],
-              xLabelAngle: 35,
-              hideHover: "auto",
-              resize: !0,
-            })
-      }
-    
-    
-      var result = depoCalc(5000, 400, 40, 12);
-      init_morris_charts(result);
-      
-      $(document).ready(function() {
-        $('#calcForm').on('submit', function(){
-           result = depoCalc();
-            if (result) {
-              $('.x_panel').show();
-              $("#graph_bar_1").empty();
-              init_morris_charts_1(result);
-            }
-        });
-    
-      });
-    </script>
 
  <!-- <link rel="stylesheet" type="text/css" href="./css/intlTelInput.min.css" /> -->
- <script type="text/javascript" src="./js/telinput/telInput/intlTelInput.min.js"></script>
- <script type="text/javascript" src="./js/telinput/telInput/mask.js"></script>
- <script type="text/javascript" src="./js/telinput/telInput/mask_list.js"></script>
-<script type="text/javascript">
-  var DetectCountry;
-                  
-  jQuery( document ).ready( function() {
-      var TelInputs = document.querySelectorAll("input[type='tel']");
-      var intlTelInput_obArr = new Array();
-      if ( TelInputs[ 0 ] ) {
-          for ( var i = 0; i < TelInputs.length; i++ ) {
-              intlTelInput_obArr[ i ] = window.intlTelInput( TelInputs[ i ], {
-                  autoHideDialCode: false,
-                  nationalMode: false,
-                  numberType: "MOBILE",
-                  preferredCountries: ['in', 'ru', 'kz' ],
-              } );
-              if ( DetectCountry ) {
-                  intlTelInput_obArr[ i ].setCountry( DetectCountry.toLowerCase() );
-              }
-          }
-      }
-      mask( "input[type='tel']" );
-  } );
-  
-  function autoCountry ( data ) {
-      if ( data && data.country ) {
-          DetectCountry = data.country;
-          console.log( data.country );
-      }
-  }
-</script>
-<script src="https://ipinfo.io/json?callback=autoCountry"></script>
+ 
+ 
+ 
+
+<script type="module" src="https://ipinfo.io/json?callback=autoCountry"></script>
   </body>
 </html>
