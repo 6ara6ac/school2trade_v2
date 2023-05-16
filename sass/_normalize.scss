@@ -1,0 +1,146 @@
+:root {
+  font-family: Play, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: Play, sans-serif;
+  background-color: #0D0E13;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2
+ {
+font-weight: 700;
+font-size: 60px;
+line-height: 0.88;
+margin: 0;
+}
+
+h3,
+h4,
+h5{
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.17;
+
+  margin: 0;
+}
+
+p{
+  font-size: 20px;
+line-height: 1.4;
+color: #D2D2D2;
+}
+
+
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+
+
+
+
+// ::selection {
+//     color: #5C5C79;
+//     background: #fff;
+//   }
+  
+//   body {
+//     font-family: Montserrat, normal;
+//     color: #000;
+//     font-size: 16px;
+//     background-color: rgb(243, 244, 245);
+//   }
+  
+//   img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//     object-fit: contain;
+//     object-position: center;
+//   }
+  
+//   a {
+//     text-decoration: none;
+//   }
+  
+//   ul {
+//     list-style: none;
+//   }
+  
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6,
+//   p {
+//     margin: 0;
+//     font-size: 16px;
+//     font-weight: 400px;
+//     line-height: 1.25;
+//   }
+  
+//   .container {
+//     @media screen and (max-width:767px) {
+//       width: auto;
+//       padding-left: 20px;
+//      padding-right: 20px;
+//     }
+
+//     @media screen and (min-width: 768px) and (max-width:1199px) {
+//       margin-top: 133px;
+//       margin: 0;
+//       padding: 0 100px;
+//     }  
+
+//     @media screen and (min-width:1200px) {
+//       padding: 0px 100px;
+//     }
+//   }
+
+//   .section {
+//     @media screen and (max-width:767px) {
+//     padding-top: 100px;
+//     margin-top: -100px;
+//     -webkit-background-clip: content-box;
+//     background-clip: content-box;
+//     }
+// }
+

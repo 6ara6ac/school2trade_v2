@@ -1,0 +1,22 @@
+{
+  "name": "school2trade_v2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "modern-normalize": "^1.1.0",
+    "phone": "^3.1.37",
+    "swiper": "^9.1.1",
+    "swiper-bundle": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "vite": "^4.3.2"
+  }
+}

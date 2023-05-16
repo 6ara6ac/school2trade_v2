@@ -1,0 +1,160 @@
+.investplan{
+    background-color: #F3F3F3;
+}
+
+.investplan-subtitle{
+font-weight: 700;
+font-size: 24px;
+line-height: 1.17;
+text-align: center;
+margin: 20px 0;
+}
+
+.investplan-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.09;
+    margin: 20px 0;
+    color: #89bf19;
+    margin-top: 87px;
+}
+
+.elementor-heading-title{
+    margin-bottom: 20px;
+    color: #89bf19;
+}
+
+
+.Y-title{
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(7, 19, 42, 0.6);
+    transform: rotate( 270deg );
+    left: -80px;
+    top: 40%;
+}
+
+
+
+.f-group{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: flex-end;
+}
+
+
+
+.f-group input {
+    font-style: normal;
+    background-color: #E3E3E3;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 22px;
+    color: #000;
+    outline: none;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.submit-button{
+    width: 200px;
+    height: 55px;
+    color: #89bf19;
+    border: 2px solid #89BF19;
+    border-radius: 50px;    
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 23px 0 62px 0;
+    cursor: pointer;
+}
+
+#calcForm{
+ width: 50%;
+}
+
+.chart__list{
+    display: grid;
+    gap: 15px;
+}
+
+.chart__list p {
+    color: #fff;
+    margin: 0;
+}
+
+.x_panel.x_panel_1 {
+    display: none;
+    width: 100%;
+}
+
+
+.investplan-container-text{
+    border-radius: 30px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+
+.chart__container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width:1001px) {
+            flex-direction: inherit;
+    }
+}
+
+.chart__list-container{
+    background-color: #89bf19;
+    color: #fff;
+    padding: 30px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    height: max-content;
+
+    @media screen and (min-width:1001px) {
+        max-width: 50%;
+        margin: 0;
+}
+}
+
+.x_content{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+}
+
+.elementor-widget-wrap{
+    background: #F3F3F3;
+    color: #000;
+    padding: 58px 160px;
+}
+
+.elementorFlex{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.investPlan__graph-descr{
+    font-weight: 700;
+    font-size: 24;
+    line-height: 1.17;
+    margin-bottom: 27px;
+}
+

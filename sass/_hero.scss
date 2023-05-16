@@ -1,0 +1,55 @@
+.hero{
+    display: flex;
+    background-image: url('/assets/heroBackground.png');
+}
+
+.hero__descr-wrap{
+    width: 33vw;
+}
+
+.main__title{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 0.85;
+    margin: 0;
+    color: #89BF19;
+
+    margin-bottom: 44px;
+}
+
+.hero__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero__list-item{
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    padding: 13px;
+    background: linear-gradient(180deg, #1D1F29 0%, #191A21 100%), linear-gradient(90.08deg, #1C1C1C 0.07%, #151515 99.94%);
+}
+
+.mainImg__wrapper{
+width: 33vw;
+}
+
+.mainImg{
+    width: 100%;
+
+}
+
+
+.lectorDescr__container{
+    margin-top: auto;
+    width: 33vw;
+    margin-left: 30px;
+}
+
+.portraitImg{
+    object-fit: cover;
+    border-radius: 100px;
+    width: 124px;
+    height: 124px;
+}

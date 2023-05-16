@@ -1,0 +1,37 @@
+.benefitsImg__list{
+    display: flex;
+    gap: 28px;
+    margin-bottom: 67px;
+    padding-top: 120px;
+}
+
+.benefitsImg__list-item.styled{
+    padding-top: 100px;
+}
+
+.benefits__title{
+    color: #89BF19;
+}
+
+.benefitsMain__wrapper{
+    display: flex;
+}
+
+.benefitsMain__subwrapper-title{
+    width: 40vw;
+    margin-right: 50px;
+    padding-bottom: 120px;
+}
+
+.benefitsMain__subwrapper-list{
+    width: 50vw;
+    padding: 31px 44px;
+    height: max-content;
+
+    border: 2px solid #1D1F29;
+    border-radius: 45px;
+}
+
+
+
+

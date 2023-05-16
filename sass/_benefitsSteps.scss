@@ -1,0 +1,46 @@
+.benefits__step{
+    display: flex;
+    align-items: center;
+    gap: 117px;
+}
+
+
+.benefitsMain__list{
+    display: grid;
+    gap: 15px;
+    margin-bottom: 35px;
+
+    color: #79809E;
+    font-size: 16px;
+    line-height: 1.25;
+
+}
+
+.stepOne{
+    background: radial-gradient(circle at 45% bottom,#1A1B3C, #1D1D1D);
+}
+
+.stepTwo{
+    background: radial-gradient(circle at 25% bottom, #1D1D1D, #260A0A);
+    text-align: end;
+
+}
+
+.stepThree{
+    gap: 117px;
+    background: radial-gradient(circle at 25% bottom,#241027, #1D1D1D);
+}
+
+.benefits-img{
+    width: 50vw;
+    width: 100%;
+}
+
+.benefits-section{
+    width: 50vw;
+    width: 100%;
+}
+
+
+
+
